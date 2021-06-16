@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <div id="timer"></div>
+    <div id="counter"></div>
+    <div id="timeGuage"></div>
+    <button onclick="displayHighscores()"> View Highscores</button>
+    <button onclick="startQuiz">Start</button>
+    <div class="code-quiz-container">
+        <h1 id="questions-display"></h1>
+        <span> 
+            <h2 class="time" style="text-align:center;"></h2class>
+
+        </span>
+        <div id="main"></div>
+    </div>
+    <div class="answer-container">
+        <span>
+            <input type="radio" id="answer-one" name="answer" class="radio" value="answerA" onclick="checkAnswer('A')">
+    </div>
+    </span>
+
+    <label for="answer-one" class="answer" id="answer-2-label"></label>
+    <div class="answer" id="B" onclick="checkAnswer('B')"></div>
+    <div class="answer" id="C" onclick="checkAnswer('C')"></div>
+    <div class="answer" id="D" onclick="checkAnswer('D')"></div>
+    </div>
+
+    <div class="next-button-container"></div>
+
+    <button onclick="submit()">Next Question</button>
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
